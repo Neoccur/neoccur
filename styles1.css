@@ -22,6 +22,7 @@ body {
     width: 100%;
     top: 0;
     font-size: 300%;
+    left: 0;
 }
  .header h2 {
     font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
@@ -39,6 +40,9 @@ and "sign up" */
    overflow: hidden;
    background-color: #333;
    margin-top: 90px;
+   position: fixed;
+   left: 0;
+   width: 100%;
 }
 
 .topnav a {
@@ -60,11 +64,13 @@ and "sign up" */
 
 /* The content of the page, under the header and navbar */
 .content {
-    width: 1500px;
-    margin-left: 500px;
+/*    width: 1500px; */
+    margin-left: 0px;
+    width: 1050px;
     background-color: whitesmoke;
     opacity: 0.9;
     position: absolute;
+    top: 136px;
 
 }
 .content h1 {
@@ -81,7 +87,7 @@ and "sign up" */
     font-size:400%; 
     font-weight:normal; 
     text-align:left; 
-    margin-left: 160px;
+    margin-left: 100px;
 }
 
 hr {
@@ -89,3 +95,8 @@ hr {
     margin: 70px;
     border: 2px solid;
 }
+
+.page-wrap {
+    width: 960px;
+    margin: 0 auto;
+    }    
