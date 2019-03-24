@@ -8,6 +8,65 @@ body {
     background-attachment: fixed;
     background-size: 100%;
 }
+
+
+/* This is the header where there will be the logo and the name of the website */
+.header {
+    height: 90px;
+    margin: 0;
+    position: fixed;
+    padding: 0;
+    text-align: center;
+    background: #4872e7;
+    color: white;
+    width: 100%;
+    top: 0;
+    font-size: 300%;
+}
+ .header h2 {
+    font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+    color: rgba(0,0,0,0.7);
+    text-shadow: 3px 3px 3px #fff;
+    margin-top: 0;
+    font-size: 90%;
+ }
+
+/* This part under here is to take 
+care of the navigation bar under 
+the header with the buttons "log in" 
+and "sign up" */
+.topnav {
+   overflow: hidden;
+   background-color: #333;
+   margin-top: 90px;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.topnav a:hover {
+    background-color: #dddddd;
+    color: black;
+}
+
+/* The content of the page, under the header and navbar */
+.content {
+    width: 1500px;
+    margin-left: 500px;
+    background-color: whitesmoke;
+    opacity: 0.9;
+    position: absolute;
+
+}
 .content h1 {
     font-size: 1000%;
     color:salmon;
@@ -25,43 +84,8 @@ body {
     margin-left: 160px;
 }
 
-.content {
-    width: 1500px;
-    margin-left: 500px;
-    background-color: whitesmoke;
-}
-
-span {
+hr {
     color: blue;
-}
-
-.header {
-    position: fixed;
-    padding: 0px;
-    text-align: center;
-    background: #4872e7;
-    color: white;
-    font-size: 30px;
-    width: 100%;
-    top: 0;
-    font-size: 300%;
-}
-
-.topnav {
-   overflow: hidden;
-   background-color: #333;
-}
-
-.topnav a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.topnav a:hover {
-    background-color: #dddddd;
-    color: black;
+    margin: 70px;
+    border: 2px solid;
 }
