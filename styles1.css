@@ -16,7 +16,7 @@ body {
     margin: 0;
     position: fixed;
     padding: 0;
-    text-align: center;
+    text-align: left;
     background: #4872e7;
     color: white;
     width: 100%;
@@ -25,11 +25,11 @@ body {
     left: 0;
 }
  .header h2 {
-    font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgba(0,0,0,0.7);
-    text-shadow: 3px 3px 3px #fff;
     margin-top: 0;
     font-size: 90%;
+    margin-left: 30px;
  }
 
 /* This part under here is to take 
@@ -117,3 +117,40 @@ hr {
     width: 960px;
     margin: 0 auto;
     }    
+
+.boxes {
+    text-align: center;
+}
+
+.box1 {
+    width: 50%;
+    padding: 5px;
+    border: 5px solid blue;
+    margin: 30px;
+    margin-left: 25%;
+}
+
+.box2 {
+    width: 85%;
+    padding: 5px;
+    border: 5px solid turquoise;
+    margin: 5%;
+    margin-left: 5%;
+}
+
+.box2 p {
+    padding: 0;
+}
+
+.button {
+    background-color: rgb(50, 177, 228);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    cursor: pointer;
+  }
