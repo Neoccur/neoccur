@@ -1,13 +1,21 @@
 /* This is the main styles page*/
 
-h1 {
+body {
+    margin: 0;
+    background-image: url("sea-and-nature.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.content h1 {
     font-size: 1000%;
     color:salmon;
     text-align: center;
     font-weight: bold;
 }
 
-h2 {
+.content h2 {
     font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
     text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
     color:darkgray; 
@@ -15,6 +23,12 @@ h2 {
     font-weight:normal; 
     text-align:left; 
     margin-left: 160px;
+}
+
+.content {
+    width: 1500px;
+    margin-left: 500px;
+    background-color: whitesmoke;
 }
 
 span {
@@ -31,4 +45,23 @@ span {
     width: 100%;
     top: 0;
     font-size: 300%;
+}
+
+.topnav {
+   overflow: hidden;
+   background-color: #333;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #dddddd;
+    color: black;
 }
