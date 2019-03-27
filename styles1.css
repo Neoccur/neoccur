@@ -154,3 +154,11 @@ hr {
     margin: 0px 0px;
     cursor: pointer;
   }
+
+  .footer {
+      background-color: #333;
+      bottom: 0;
+      padding: 30px;
+      opacity: 1;
+      width: 100%
+  }
