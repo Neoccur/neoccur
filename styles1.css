@@ -107,17 +107,20 @@ and "sign up" */
     font-size: 200%;
 }
 
+/* This next small part is for the blue line breaks. */
 hr {
     color: blue;
     margin: 70px;
     border: 2px solid;
 }
 
+/* This here is to have everything centered, from whichever computer you are on */
 .page-wrap {
     width: 960px;
     margin: 0 auto;
     }    
 
+/* The sign up box on the bottom of the home page */
 .boxes {
     text-align: center;
 }
@@ -155,10 +158,12 @@ hr {
     cursor: pointer;
   }
 
+  /* This is the footer, bottom section of the website */
   .footer {
-      background-color: #333;
-      bottom: 0;
-      padding: 30px;
-      opacity: 1;
-      width: 100%
-  }
+    background-color: #333;
+    padding: 30px;
+    width: 100%;
+    left: 0;
+    opacity: 1;
+    position: center bottom;
+    }
