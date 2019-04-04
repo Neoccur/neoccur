@@ -4,4 +4,7 @@ function redirect1() {
     location.href = "signup.html";
 };
 
+function French() {
+    
+}
 
