@@ -1,4 +1,7 @@
+// This is the Javascript page for index.html
 
-document.getElementById("signUpPage").onclick = function () {
+function redirect1() {
     location.href = "signup.html";
 };
+
+
