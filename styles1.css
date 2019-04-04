@@ -39,10 +39,11 @@ and "sign up" */
 .topnav {
    overflow: hidden;
    background-color: #333;
-   margin-top: 90px;
+   top: 90px;
    position: fixed;
    left: 0;
    width: 100%;
+   z-index: -1;
 }
 
 .topnav a {
@@ -158,6 +159,47 @@ hr {
     cursor: pointer;
 }
 
+/* Styling the Language Flags */
 #FrenchFlag {
-    width: 25%
+    position: relative;
+    border-radius: 15%;
+    z-index: 3;
+    margin-top: 25px;
+}
+
+#USFlag {
+    position: relative;
+    border-radius: 20%;
+    z-index: 4;
+    height: 45px;
+    margin-top: 25px;
+}
+
+.LanguageSelect {
+    position: fixed;
+    display: inline;
+}
+
+.LanguageFlags {
+    display: none;
+    background-color: whitesmoke;
+    width: 120px;
+    height: 150px;
+    border: black;
+}
+
+.LanguageFlags img {
+    display: block;
+    padding: 12px 16px;
+    width: 80%;
+    border-radius: 15%;
+}
+
+.CurrentLanguage {
+    cursor: pointer;
+    width: 5%;
+}
+
+.LanguageSelect:hover .LanguageFlags {
+    display: block;
 }
