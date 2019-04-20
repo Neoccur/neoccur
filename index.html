@@ -7,33 +7,35 @@ when they enter the webite.
 -->
 
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Neoccur</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles1.css">
-    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
-    <script src="main.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Neoccur</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles1.css">
+        <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+        <script src="main.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="constructionIcon.ico" type="image/x-icon"/>
 </head>
+
 <body>
     <div class="page-wrap">
         <div class ="header">
+           <!-- This is the site name -->
+           <h2><sub>ne</sub>o<sup>ccur</sup></h2>
 
-            <!-- This is the site name -->
-            <h2><sub>ne</sub>o<sup>ccur</sup></h2>
-        </div>
+            <!-- The language selection with flags -->
+            <div class="LanguageSelect">
+                <img class="CurrentLanguage" id="USFlag" src="USFlag.png" alt="English">
 
-        <!-- The language selection -->
-        <div class="LanguageSelect">
-            <img class="CurrentLanguage" id="USFlag" src="USFlag.png" alt="english">
-
-            <div class="LanguageFlags">
-                <img id="FrenchFlag" src="FrenchFlag.svg" onclick="French()">
+                <div class="LanguageFlags">
+                    <!-- Where the language Flags will be, for now there is only English and French -->
+                    <img class="Flag1" id="FrenchFlag" src="FrenchFlag.svg" alt="French" onclick="French()">
+                </div>
             </div>
         </div>
-
 
         <!-- The top navigation -->
         <div class="topnav">
