@@ -74,6 +74,16 @@
         case "GET":
             // Send the login page <-- serious comment but sert à rien, +0.5pt
 
+            if (isset($_SESSION["ClientToken"]))
+            {
+                $ClientTokenQueryName = MysqlClientQuery("ClientToken", $_SESSION["ClientToken"], "ClientName")[0];
+
+                if (isset($ClientTokenQueryName))
+                {
+                    HttpClientRedirect($HttpServer["HostUrl"]);
+                }
+            }
+
             ?>
 <!DOCTYPE html>
 <html>
