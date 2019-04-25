@@ -1,8 +1,8 @@
 <?php
     $HttpServer = array
     (
-        "HostName" => "localhost", // It is the ligne de code the most important du server
-        "HostUrl" => "http://localhost"
+        "HostName" => "neoccur.com", // It is the ligne de code the most important du server
+        "HostUrl" => "http://neoccur.com"
     );
 
     $MysqlServer = array
