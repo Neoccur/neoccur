@@ -146,7 +146,7 @@
     switch ($HttpClient["RequestMethod"])
     {
         case "GET":
-            // Send the login page <-- serious comment but sert à rien, +0.5pt
+            // Send the register page <-- serious comment but sert à rien, +0.5pt
 
             if (isset($_SESSION["ClientToken"]))
             {
@@ -162,7 +162,7 @@
 <!DOCTYPE html>
 <html>
         <head>
-            <!-- This is very complex to understand, this is a title ! It's means that when a client connect to the server, he can see the 'Neoccur - Login' title in his tab ! -->
+            <!-- This is very complex to understand, this is a title ! It's means that when a client connect to the server, he can see the 'Neoccur - Register' title in his tab ! -->
             <title>Neoccur - Register</title>
         </head>
         <body>
