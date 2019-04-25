@@ -1,8 +1,8 @@
 <?php
     $HttpServer = array
     (
-        "HostName" => "neoccur.com", // It is the ligne de code the most important du server
-        "HostUrl" => "http://neoccur.com"
+        "HostName" => "localhost", // It is the ligne de code the most important du server
+        "HostUrl" => "http://localhost"
     );
 
     $MysqlServer = array
@@ -93,7 +93,6 @@
         </head>
         <body>
             <center>
-                
                 <h2>Sign in</h2>
                 <?php
 
@@ -116,11 +115,13 @@
                 ?>
                 <!-- We use the 'POST' method for the authentication system -->
                 <form method="post">
-                    <p>Username <input class="InputClientName" type="text" name="ClientName"/></p>
                     <br>
+                    <p>Username <input class="InputClientName" type="text" name="ClientName"/></p>
                     <p>Password <input class="InputClientKey" type="password" name="ClientKey"/></p>
                     <br>
                     <input class="SubmitVerify" type="submit" value="Verify"/>
+                    <br>
+                    <p>You don't have an account yet ? <a href="<?php echo "/register"; ?>">Register</a></p>
                 </form>
             </center>
         </body>
@@ -131,33 +132,33 @@
         case "POST":
 
                 // So, enfaite this machain chouaitte truc bidule is here to allow the authentication because si non it will be the anarchy thermo nucléaire because there is a lot of singes sur internet.
-                if (isset($_POST["ClientName"]) && isset($_POST["ClientKey"]))
+                if (isset($_POST["ClientName"]) && isset($_POST["ClientKey"]) && $_POST["ClientName"] != "" && $_POST["ClientKey"] != "")
                 {
                     $ClientNameQueryToken = MysqlClientQuery("UserName", $_POST["ClientName"], "UserToken")[0];
                     $ClientKeyQueryToken = MysqlClientQuery("UserKey", $_POST["ClientKey"], "UserToken")[0];
 
                     if (isset($ClientNameQueryToken) && isset($ClientKeyQueryToken))
                     {
-                        // On est des hackers, Ouai! Ah ya un système d'authentification, bon bah tampis! ... Geniuses! :D
+                        // On est des hackers, Ouai! Ah merde ya un système d'authentification, bon bah tampis! ... Geniuses! :D
                         if ($ClientNameQueryToken == $ClientKeyQueryToken)
                         {
                             $_SESSION["ClientToken"] = $ClientKeyQueryToken;
 
-                            HttpClientRedirect($HttpServer["HostUrl"]);
+                            HttpClientRedirect("/");
                         }
                         else
                         {
-                            HttpClientRedirect($HttpServer["HostUrl"]."/login.php?error=not_valid_credential");
+                            HttpClientRedirect("/login?error=not_valid_credential");
                         }
                     }
                     else
                     {
-                        HttpClientRedirect($HttpServer["HostUrl"]."/login.php?error=not_valid_credential");
+                        HttpClientRedirect("/login?error=not_valid_credential");
                     }
                 }
                 else
                 {
-                    HttpClientRedirect($HttpServer["HostUrl"]."/login.php?error=not_filled_credential");
+                    HttpClientRedirect("/login?error=not_filled_credential");
                 }
 
             break;
@@ -165,7 +166,7 @@
             
             // The method used by the client is not handled by our server, for security reasons we dont interpret it
             // We redirect our client to the main page with the 'GET' method
-            HttpClientRedirect($HttpServer["HostUrl"]);
+            HttpClientRedirect("/");
 
             break;
     }
