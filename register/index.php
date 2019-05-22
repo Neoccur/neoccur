@@ -7,11 +7,11 @@
 
     $MysqlServer = array
     (
-        "HostName" => "", // Set the mysql host name
-        "UserName" => "", // Set the mysql username
-        "UserKey" => "", // Set the mysql database password
-        "DatabaseName" => "", // BON TA COMPRIS ! Yes nom dla base..
-        "TableName" => "" // flemme d'expliquer...
+        "HostName" => "neoccurcecdev.mysql.db", // Set the mysql host name
+        "UserName" => "neoccurcecdev", // Set the mysql username
+        "UserKey" => "devPasswordNeoccur150", // Set the mysql database password
+        "DatabaseName" => "neoccurcecdev", // BON TA COMPRIS ! Yes nom dla base..
+        "TableName" => "authentification" // flemme d'expliquer...
     );
 
     $HttpClient = array
@@ -53,7 +53,7 @@
             if ($MysqlClient == true)
             {
                 // We retreive the server's response
-                $MysqlResponseValue = mysqli_fetch_array(mysqli_query($MysqlClient,"SELECT ".$ResponseType." FROM ".$MysqlServerTableName." WHERE ".$QueryType." = '".$QueryValue."';"));
+                $MysqlResponseValue = mysqli_fetch_array(mysqli_query($MysqlClient,"SELECT ".$ResponseType." FROM ".$MysqlServer["TableName"]." WHERE ".$QueryType." = '".$QueryValue."';"));
 
                 // Close properly the connection beetween the client and the server
                 mysqli_close($MysqlClient);
@@ -104,7 +104,7 @@
             if ($MysqlClient == true)
             {
                 // We retreive the server's response
-                $MysqlResponseValue = mysqli_fetch_array(mysqli_query($MysqlClient,"INSERT INTO ".$MysqlServerTableName." (".$InsertType.") VALUES (".$InsertValue.");"));
+                $MysqlResponseValue = mysqli_fetch_array(mysqli_query($MysqlClient,"INSERT INTO ".$MysqlServer["TableName"]." (".$InsertType.") VALUES (".$InsertValue.");"));
 
                 // Close properly the connection beetween the client and the server
                 mysqli_close($MysqlClient);
@@ -131,8 +131,8 @@
 
         if (isset($ClientTokenQueryToken) && $ClientTokenQueryToken != "")
         {
-            $InsertType = ["UserName", "UserEmail", "UserKey", "UserToken"];
-            $InsertValue = [$UserName, $UserEmail, $UserKey, $UserToken];
+            $InsertType = ["UserName", "UserEmail", "UserKey", "UserToken", "Language"];
+            $InsertValue = [$UserName, $UserEmail, $UserKey, $UserToken, "English"];
 
             MysqlClientInsert($InsertType, $InsertValue);
         }

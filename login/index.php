@@ -53,7 +53,7 @@
             if ($MysqlClient == true)
             {
                 // We retreive the server's response
-                $MysqlResponseValue = mysqli_fetch_array(mysqli_query($MysqlClient,"SELECT ".$ResponseType." FROM ".$MysqlServerTableName." WHERE ".$QueryType." = '".$QueryValue."';"));
+                $MysqlResponseValue = mysqli_fetch_array(mysqli_query($MysqlClient,"SELECT ".$ResponseType." FROM ".$MysqlServer["TableName"]." WHERE ".$QueryType." = '".$QueryValue."';"));
 
                 // Close properly the connection beetween the client and the server
                 mysqli_close($MysqlClient);
