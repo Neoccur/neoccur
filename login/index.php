@@ -7,11 +7,11 @@
 
     $MysqlServer = array
     (
-        "HostName" => "", // Set the mysql host name
-        "UserName" => "", // Set the mysql username
-        "UserKey" => "", // Set the mysql database password
-        "DatabaseName" => "", // BON TA COMPRIS ! Yes nom dla base..
-        "TableName" => "" // flemme d'expliquer...
+        "HostName" => "neoccurcecdev.mysql.db", // Set the mysql host name
+        "UserName" => "neoccurcecdev", // Set the mysql username
+        "UserKey" => "devPasswordNeoccur150", // Set the mysql database password
+        "DatabaseName" => "neoccurcecdev", // BON TA COMPRIS ! Yes nom dla base..
+        "TableName" => "authentification" // flemme d'expliquer...
     );
 
     $HttpClient = array
