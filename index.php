@@ -11,7 +11,7 @@
         "Language" => "English"
     );
 
-    if ($HttpClient["RequestHostName"] == $HttpServer["HostName"])
+    if ($HttpClient["RequestHostName"] == $HttpServer["HostName"] || $HttpClient["RequestHostName"] == "www".$HttpServer["HostName"])
     {
         if ($HttpClient["RequestMethod"] == "GET")
         {
