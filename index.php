@@ -8,7 +8,6 @@
     (
         "RequestHostName" => $_SERVER["SERVER_NAME"],
         "RequestMethod" => $_SERVER["REQUEST_METHOD"],
-        "Token" => $_SESSION["ClientToken"],
         "Language" => "English"
     );
 
@@ -18,11 +17,35 @@
         {
             if ($HttpClient["Language"] == "English")
             {
-                Header("Location: http://".$HttpServer["HostName"]."/en");
+                ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Neoccur</title>
+
+        <meta http-equiv="refresh" content="0;URL=http://<?php echo $HttpServer["HostName"]; ?>/en">
+    </head>
+    <body>
+        
+    </body>
+</html>
+                <?php
             }
             else if ($HttpClient["Language"] == "French")
             {
-                Header("Location: http://".$HttpServer["HostName"]."/fr");
+                ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Neoccur</title>
+
+        <meta http-equiv="refresh" content="0;URL=http://<?php echo $HttpServer["HostName"]; ?>/fr">
+    </head>
+    <body>
+        
+    </body>
+</html>
+                <?php
             }
         }
     }
