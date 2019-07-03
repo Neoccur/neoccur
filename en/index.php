@@ -26,7 +26,7 @@
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="../assets/styles/original.css">
-        <link rel="stylesheet" type="text/css" href="en/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
 
         <script>
             function LanguageClickEvent(Language)
