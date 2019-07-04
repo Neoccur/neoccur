@@ -15,5 +15,6 @@
 @media (min-width:961px) { 
     h1 {
         color: blue;
+        font-size: 300%;
     }
 }
