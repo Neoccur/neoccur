@@ -1,8 +1,10 @@
 <?php
+    session_start();
+
     $HttpServer = array
     (
         "HostName" => "neoccur.com", // It is the ligne de code the most important du server
-        "HostUrl" => "http://neoccur.com"
+        "HostUrl" => "https://neoccur.com"
     );
 
     $MysqlServer = array
@@ -143,7 +145,7 @@
     }
 
     // Retreive the client method to determine the page to send <-- serious comment +1pt
-    switch ($HttpClient["RequestMethod"])
+    switch ($_SERVER["REQUEST_METHOD"])
     {
         case "GET":
             // Send the register page <-- serious comment but sert à rien, +0.5pt
@@ -194,7 +196,7 @@
 
             ?>
                 <!-- We use the 'POST' method for the authentication system -->
-                <form method="post" action="/test/register/index.php">
+                <form action="https://neoccur.com/test/register/index.php" method="post">
                     <br>
                     <p>Username <input class="InputClientName" type="text" name="ClientName"/></p>
                     <p>Email <input class="InputClientEmail" type="text" name="ClientEmail"/></p>
@@ -203,7 +205,7 @@
                     <br>
                     <input class="SubmitVerify" type="submit" value="Register"/>
                     <br>
-                    <p>Already have an account ? <a href="<?php echo "/login"; ?>">Login</a></p>
+                    <p>Already have an account ? <a href="<?php echo "/test/login"; ?>">Login</a></p>
                 </form>
             </center>
         </body>
