@@ -1,4 +1,6 @@
 <?php
+
+//authentification
     session_start();
 
     $HttpServer = array
