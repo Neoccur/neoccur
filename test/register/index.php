@@ -194,7 +194,7 @@
 
             ?>
                 <!-- We use the 'POST' method for the authentication system -->
-                <form method="post">
+                <form method="post" action="/test/register/index.php">
                     <br>
                     <p>Username <input class="InputClientName" type="text" name="ClientName"/></p>
                     <p>Email <input class="InputClientEmail" type="text" name="ClientEmail"/></p>
