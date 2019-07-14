@@ -60,6 +60,7 @@
         </div>
         <div class="WhiteBackground">
             <div class="Home">
+                
                 <center>
                     <h1>Welcome to Neoccur</h1>
                     <b>“We don't meet anyone by chance” <br>         --Avijeet Das</b>
