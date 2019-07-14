@@ -26,7 +26,6 @@
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="../assets/styles/original.css">
-        <link rel="stylesheet" type="text/css" href="styles.css">
 
         <script>
             function LanguageClickEvent(Language)
@@ -59,12 +58,14 @@
                 </li>
             </div>
         </div>
-        <div class="Home">
-            <center>
-                <h1>Welcome to Neoccur</h1>
-                <b>“We don't meet anyone by chance” <br>         --Avijeet Das</b>
-            </center>
-            <br><br><br>
+        <div class="WhiteBackground">
+            <div class="Home">
+                <center>
+                    <h1>Welcome to Neoccur</h1>
+                    <b>“We don't meet anyone by chance” <br>         --Avijeet Das</b>
+                </center>
+                <br><br><br>
+            </div>
         </div>
     </body>
 </html>
