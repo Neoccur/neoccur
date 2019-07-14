@@ -108,11 +108,20 @@ body
     height: 1500px;
 }
 
+.WhiteBackground {
+    background-color: #fff;
+    height: 100%;
+    margin: 200px;
+}
+
 @media (min-width:320px) { /*Phone*/
     h1 {
         color: aqua;
     }
 
+    .WhiteBackground {
+        margin: 10px;
+    }
  }
 
 
@@ -126,14 +135,6 @@ body
 @media (min-width:961px) { /*Computer*/
     h1 {
         color: blue;
-        font-size: 3000%;
+        font-size: 300%;
     }
 }
-
-
-.WhiteBackground {
-    background-color: #fff;
-    height: 100%;
-    margin: 100px;
-}
-
