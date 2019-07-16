@@ -62,7 +62,9 @@
             <div class="Home">
 
                 <center>
-                    <h1>Welcome to Neoccur</h1>
+                    <div class="neoccur_Header">
+                        <h1>neoccur</h1>
+                    </div>
                     <br><br><br><br>
                     <b>“We don't meet anyone by chance” <br><br>         --Avijeet Das</b>
                 </center>

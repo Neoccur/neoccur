@@ -127,6 +127,12 @@ body
     h1 {
         color: green;
     }
+    .WhiteBackground {
+        margin-top: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 80px;
+    }
 }
 
 
@@ -139,10 +145,27 @@ body
     .WhiteBackground {
         background-color: #fff;
         height: 100%;
-        margin-top: 60px;
-        margin-left: 400px;
-        margin-right: 400px;
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
         margin-bottom: 100px;
     }
 
+}
+
+.Neoccur_Header {
+    background-image: url("../images/neoccurback.png");
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    height: 30%;
+}
+
+.Neoccur_Header h1 {
+    text-align: center;
+    top: 50%;
+}
+
+.Neoccur_Header img {
+    width: 20%;
 }
