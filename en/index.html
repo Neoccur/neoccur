@@ -45,9 +45,9 @@
     </head>
     <body>
         <div class="NavigationBar">
-            <b><a href="home" style="float: left;">Home</a></b>
-            <b><a href="login" style="float: right;">Log in</a></b>
-            <b><a href="register" style="float: right;">Sign up</a></b>
+            <b><a href="index.php" style="float: left;">Home</a></b>
+            <b><a href="/login/index.php" style="float: right;">Log in</a></b>
+            <b><a href="/register/index.php" style="float: right;">Sign up</a></b>
             <div style="float: right;" id="MenuSlide">
                 <li>
                     <img class="Language" src="../assets/icons/language.png" alt="Language"/>
