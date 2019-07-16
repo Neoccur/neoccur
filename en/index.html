@@ -58,17 +58,38 @@
                 </li>
             </div>
         </div>
-        <div class="WhiteBackground">
+        <div class="WhiteBackground">  
             <div class="Home">
 
                 <center>
+                    
                     <div class="neoccur_Header">
                         <img src="../assets/images/neoccur_logo.png" alt="neoccur">
                     </div>
+                    
                     <br><br><br><br><br><br><br>
-                    <b id="quote">“We don't meet anyone by chance” <br><br>         --Avijeet Das</b>
+                    
+                    <div class="quote">
+                        <b>“We don't meet anyone by chance” <br><br>         --Avijeet Das</b>
+                    </div>
+
+                    <hr>
+
+                    <div class="questions">
+                        <div class="question1">
+
+                        </div>
+
+                        <div class="question2">
+
+                        </div>
+                        
+                        <div class="question2">
+
+                        </div>
+                    </div>
+
                 </center>
-                <br><br><br>
             </div>
         </div>
     </body>
