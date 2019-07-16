@@ -63,10 +63,10 @@
 
                 <center>
                     <div class="neoccur_Header">
-                        <h1>neoccur</h1>
+                        <img src="../assets/images/neoccur_logo.png" alt="neoccur">
                     </div>
-                    <br><br><br><br>
-                    <b>“We don't meet anyone by chance” <br><br>         --Avijeet Das</b>
+                    <br><br><br><br><br><br><br>
+                    <b id="quote">“We don't meet anyone by chance” <br><br>         --Avijeet Das</b>
                 </center>
                 <br><br><br>
             </div>

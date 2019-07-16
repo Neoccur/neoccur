@@ -109,25 +109,29 @@ body
 }
 
 
-@media (min-width:320px) { /*Phone*/
+@media (min-width:320px) 
+{ /*Phone*/
     h1 {
         color: aqua;
     }
 
-    .WhiteBackground {
+    .WhiteBackground 
+    {
         margin-top: 10px;
         margin-left: 20px;
         margin-right: 20px;
         margin-bottom: 40px;
     }
- }
+}
 
 
-@media (min-width:641px) {  /*Tablet*/
+@media (min-width:641px) 
+{  /*Tablet*/
     h1 {
         color: green;
     }
-    .WhiteBackground {
+    .WhiteBackground 
+    {
         margin-top: 20px;
         margin-left: 200px;
         margin-right: 200px;
@@ -136,13 +140,15 @@ body
 }
 
 
-@media (min-width:961px) { /*Computer*/
+@media (min-width:961px) 
+{ /*Computer*/
     h1 {
         color: blue;
         font-size: 300%;
     }
 
-    .WhiteBackground {
+    .WhiteBackground 
+    {
         background-color: #fff;
         height: 100%;
         margin-top: 20px;
@@ -153,7 +159,8 @@ body
 
 }
 
-.Neoccur_Header {
+.Neoccur_Header 
+{
     background-image: url("../images/neoccurback.png");
     background-repeat: no-repeat;
     margin: 0;
@@ -161,11 +168,18 @@ body
     height: 30%;
 }
 
-.Neoccur_Header h1 {
+.Neoccur_Header h1 
+{
     text-align: center;
     top: 50%;
 }
 
-.Neoccur_Header img {
-    width: 20%;
+.Neoccur_Header img 
+{
+    width: 30%;
+    margin-top: 140px;
+}
+
+#quote {
+    font-size: 200%;
 }
