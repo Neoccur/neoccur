@@ -10,6 +10,7 @@ body
     overflow: hidden;
     background-color: #333;
     position: fixed;
+    z-index: 10;
     top: 0;
     width: 100%;
 }
@@ -149,8 +150,8 @@ body
 
     .WhiteBackground 
     {
+        height: 272%;
         background-color: #fff;
-        height: 100%;
         margin-top: 20px;
         margin-left: 20%;
         margin-right: 20%;
@@ -180,16 +181,61 @@ body
     margin-top: 140px;
 }
 
-.quote b {
+.quote b 
+{
     font-size: 200%;
 }
 
-.red_lign {
+.red_line 
+{
     margin-top: 400px;
-    float: left;
-    width: 20px;
-    height: 20px;
-    margin: 5px;
+    width: 96%;
+    height: 5px;
     background-color: red;
-    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 40%;
+    margin-bottom: 200px;
+}
+
+.question_1
+{
+    margin-top: 200px;
+    position: relative;
+    background-color: rgb(41, 172, 233);
+    margin: 0%;
+    height: 50%;
+    width: 100%;
+}
+
+.question_2 
+{
+    position: relative;
+    background-color: rgb(0, 255, 128);
+    margin: 0%;
+    height: 50%;
+    width: 100%;
+}
+
+.question_3 
+{
+    position: relative;
+    background-color: rgb(255, 166, 0);
+    margin: 0%;
+    height: 50%;
+    width: 100%;
+}
+
+.triangle_1 {
+    width: 0px; 
+    height: 0px; 
+    border-right: 60px solid transparent;
+    border-top: 60px solid rgb(41, 172, 233);
+    border-left: 60px solid transparent;
+}
+
+.triangle_2 {
+    width: 0px; 
+    height: 0px; 
+    border-right: 60px solid transparent;
+    border-top: 60px solid rgb(0, 255, 128);
+    border-left: 60px solid transparent;
 }

@@ -73,19 +73,18 @@
                         <b>“We don't meet anyone by chance” <br><br>         --Avijeet Das</b>
                     </div>
 
-                    <hr>
+                    <div class="red_line"></div>
 
                     <div class="questions">
-                        <div class="question1">
-
+                        <div class="question_1">
                         </div>
 
-                        <div class="question2">
-
+                        <div class="question_2">
+                            <div class="triangle_1"></div>
                         </div>
                         
-                        <div class="question2">
-
+                        <div class="question_3">
+                            <div class="triangle_2"></div>
                         </div>
                     </div>
 
