@@ -45,7 +45,7 @@
     </head>
     <body>
         <div class="NavigationBar">
-            <b><a href="index.php" style="float: left;">Accueil</a></b>
+            <b><a href="index.html" style="float: left;">Accueil</a></b>
             <b><a href="/login/index.php" style="float: right;">Connexion</a></b>
             <b><a href="/register/index.php" style="float: right;">Inscription</a></b>
             <div style="float: right;" id="MenuSlide">
