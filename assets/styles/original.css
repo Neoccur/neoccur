@@ -47,7 +47,7 @@ body
 {
     max-height: 0px;
     overflow: hidden;
-    transition: all .5s;
+    transition: all 0.5s;
     border-radius: 3px;
     background: #444;
     box-shadow: none;

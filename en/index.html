@@ -33,12 +33,12 @@
                 if (Language == 0)
                 {
                     // English
-                    document.location.href="http://<?php echo $HttpServer["HostName"]; ?>/en/";
+                    document.location.href="http://neoccur.com/en/";
                 }
                 else if (Language == 1)
                 {
                     // French
-                    document.location.href="http://<?php echo $HttpServer["HostName"]; ?>/fr/";
+                    document.location.href="http://neoccur.com/fr/";
                 }
             }
         </script>
