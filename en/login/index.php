@@ -11,7 +11,7 @@
         "UserName" => "neoccurcecdev", // Set the mysql username
         "UserKey" => "devPasswordNeoccur150", // Set the mysql database password
         "DatabaseName" => "neoccurcecdev", // BON TA COMPRIS ! Yes nom dla base..
-        "TableName" => "authentification" // flemme d'expliquer...
+        "TableName" => "authentification" // Nom du Tableau utiliser pour l'authentification. T'es feignant IlaX - Oxyde 
     );
 
     $HttpClient = array
