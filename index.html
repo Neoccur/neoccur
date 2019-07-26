@@ -1,27 +1,134 @@
-<meta charset="utf-8">
-<link rel="shortcut icon" href="constructionIcon.ico" type="image/x-icon"/>
-<style>
-    body
-    {
-        background-color: gainsboro
-    }
-    
-    h1
-    {
-        text-align: center;
-        font-size: 50px;
-    }
-    .logo {
-        width: 30%;
-    }
-    
-</style>
-</head>
+<?php
+    $HttpServer = array
+    (
+        "HostName" =>
+"neoccur.com" ); $HttpClient = array ( "RequestHostName" => $_SERVER["SERVER_NAME"], "RequestMethod" => $_SERVER["REQUEST_METHOD"], "Token" => $_SESSION["ClientToken"], "Language" => "English" ); if ($HttpClient["RequestHostName"] == $HttpServer["HostName"]) { if ($HttpClient["RequestMethod"] == "GET") { ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neoccur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../assets/styles/original.css" />
+    <!-- Bootstrap and font awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
+  </head>
+  <body onload="underConstruction()">
+    <nav class="NavigationBar">
+      <div class="nav-home">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="nav-links">
+        <div id="MenuSlide">
+          <li>
+            <img class="Language" src="../assets/image/language.png" alt="Language" />
+            <ul>
+              <li onclick="LanguageClickEvent(0);"><img src="../assets/images/flags/us.png" width="38px" height="auto" alt="EN" /></li>
+              <li onclick="LanguageClickEvent(1);"><img src="../assets/images/flags/fr.png" width="38px" height="auto" alt="FR" /></li>
+            </ul>
+          </li>
+        </div>
+        <a href="/register/index.php">Sign up</a>
+        <a href="/login/index.php">Log in</a>
+      </div>
+    </nav>
+    <!--<div class="neoccur_Header">-->
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="display-4">First Slide</h3>
+              <p class="lead">This is a description for the first slide. (images can be whatever)</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1920x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="display-4">Second Slide</h3>
+              <p class="lead">This is a description for the second slide.</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('https://source.unsplash.com/O7fzqFEfLlo/1920x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="display-4">Third Slide</h3>
+              <p class="lead">This is a description for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+    <!--</div>-->
+    <!-- Page Content -->
+    <section class="py-5">
+      <div class="container">
+        <h1 class="font-weight-light">Hey there! Welcome to Neoccur</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, recusandae dicta. Cupiditate nam dicta, maiores, mollitia unde assumenda laboriosam voluptatem omnis at molestias autem iusto ex reprehenderit iure voluptatum in.</p>
+        <hr />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus velit eius porro accusantium debitis error veniam cumque quaerat. Nostrum atque aliquid ea quos. Quam voluptatem suscipit quae. Totam, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cum deserunt sequi laboriosam commodi aut similique labore, fuga pariatur deleniti, odio adipisci molestias consequuntur eligendi consequatur cumque provident temporibus perspiciatis!</p>
+        <img class="w-100 mb-5" src="http://wowslider.com/sliders/demo-81/data1/images/hawk512466.jpg" alt="" />
+        <h1 class="font-weight-light">I am having a hard time lol</h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, rem corrupti ab incidunt saepe deleniti ut sapiente fugit vero iusto optio facere accusantium eum natus corporis suscipit perferendis fuga enim.
+      </div>
+    </section>
+    <div class="red_line"></div>
 
-<body>
-<center>
-    <img class="logo" src="assets/images/neoccur_logo.png" alt="">
-    <h1>Sorry, this website is currently under construction.</h1>
-</center>    
-</body>
+    <div class="questions">
+      <div class="question_1"></div>
+
+      <div class="question_2">
+        <div class="triangle_1"></div>
+      </div>
+
+      <div class="question_3">
+        <div class="triangle_2"></div>
+      </div>
+    </div>
+    <script>
+      function LanguageClickEvent(Language) {
+        if (Language == 0) {
+          // English
+          document.location.href = "http://neoccur.com/en/";
+        } else if (Language == 1) {
+          // French
+          document.location.href = "http://neoccur.com/fr/";
+        }
+      }
+    </script>
+    <!-- Optional JavaScript for bootstrap and font awesome-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
+<?php
+        }
+        else
+        {
+
+        }
+    }
+?>
+
+<blockquote class="quote">
+  <h1><i class="fas fa-quote-left"></i> We don't meet anyone by chance <i class="fas fa-quote-right"></i></h1>
+  <h4 class="blockquote-footer">Avijeet Das</h4>
+</blockquote>
