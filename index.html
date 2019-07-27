@@ -8,13 +8,10 @@
     <!-- Bootstrap and font awesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
+    <!-- The JavaScript library in main.js -->
+    <script src="main.js"></script>
   </head>
   <body onload="underConstruction()">
-    <script>
-      function underConstruction() {
-        alert("This website is currently under construction and is not fully operational. You have been warned.");
-      }
-    </script>
     <nav class="NavigationBar">
       <div class="nav-home">
         <a href="index.html">Home</a>
@@ -24,8 +21,8 @@
           <li>
             <img class="Language" src="assets/images/language.png" alt="Language" />
             <ul>
-              <li onclick="LanguageClickEvent(0);"><img src="assets/images/flags/us.png" width="38px" height="auto" alt="EN" /></li>
-              <li onclick="LanguageClickEvent(1);"><img src="assets/images/flags/fr.png" width="38px" height="auto" alt="FR" /></li>
+              <li onclick="languageClickEvent('en');"><img src="assets/images/flags/us.png" width="38px" height="auto" alt="EN" /></li>
+              <li onclick="languageClickEvent('fr');"><img src="assets/images/flags/fr.png" width="38px" height="auto" alt="FR" /></li>
             </ul>
           </li>
         </div>
@@ -98,17 +95,7 @@
         <div class="triangle_2"></div>
       </div>
     </div>
-    <script>
-      function LanguageClickEvent(Language) {
-        if (Language == 0) {
-          // English
-          document.location.href = "http://neoccur.com";
-        } else if (Language == 1) {
-          // French
-          document.location.href = "http://neoccur.com/fr/";
-        }
-      }
-    </script>
+
     <!-- Optional JavaScript for bootstrap and font awesome-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
@@ -117,14 +104,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
-<?php
-        }
-        else
-        {
-
-        }
-    }
-?>
 
 <blockquote class="quote">
   <h1><i class="fas fa-quote-left"></i> We don't meet anyone by chance <i class="fas fa-quote-right"></i></h1>
