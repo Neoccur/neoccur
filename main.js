@@ -10,13 +10,7 @@ function languageClickEvent(lang) {
     default:
       document.location.href = "http://neoccur.com/"+ lang + "/";
   };
-  /*if (lang == "en") {
-    // English
-    document.location.href = "http://neoccur.com";
-  } else if (lang == "fr") {
-    // French
-    document.location.href = "http://neoccur.com/fr/";
-  };*/
+
 };
 
 function underConstruction() {
