@@ -90,8 +90,38 @@
         <head>
             <!-- This is very complex to understand, this is a title ! It's means that when a client connect to the server, he can see the 'Neoccur - Login' title in his tab ! -->
             <title>Neoccur - Login</title>
+            <link rel="stylesheet" type="text/css" href="assets/styles/original.css" />
         </head>
+        <script>
+            function LanguageClickEvent(Language) {
+                if (Language == 0) {
+                // English
+                document.location.href = "http://neoccur.com";
+                } else if (Language == 1) {
+                // French
+                document.location.href = "http://neoccur.com/fr/";
+                }
+            }
+        </script>
         <body>
+            <nav class="NavigationBar">
+                <div class="nav-home">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-links">
+                    <div id="MenuSlide">
+                        <li>
+                            <img class="Language" src="assets/images/language.png" alt="Language" />
+                            <ul>
+                            <li onclick="LanguageClickEvent(0);"><img src="assets/images/flags/us.png" width="38px" height="auto" alt="EN" /></li>
+                            <li onclick="LanguageClickEvent(1);"><img src="assets/images/flags/fr.png" width="38px" height="auto" alt="FR" /></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <a href="register.php">Sign up</a>
+                    <a href="login.php">Log in</a>
+                </div>
+            </nav>
             <center>
                 <h2>Sign in</h2>
                 <?php
