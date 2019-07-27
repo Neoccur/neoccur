@@ -130,7 +130,7 @@ blockquote .blockquote-footer::before {
   margin-bottom: 200px;
 }
 
-.question_1 {
+.colored_section_1 {
   margin-top: 200px;
   position: relative;
   background-color: #303030;
@@ -139,7 +139,7 @@ blockquote .blockquote-footer::before {
   width: 100%;
 }
 
-.question_2 {
+.colored_section_2 {
   position: relative;
   background-color: #F04937;
   margin: 0%;
@@ -147,7 +147,7 @@ blockquote .blockquote-footer::before {
   width: 100%;
 }
 
-.question_3 {
+.colored_section_3 {
   position: relative;
   background-color: #303030;
   margin: 0%;
