@@ -125,7 +125,7 @@ blockquote .blockquote-footer::before {
   margin-top: 400px;
   width: 96%;
   height: 5px;
-  background-color: red;
+  background-color: #F04937;
   border-radius: 40%;
   margin-bottom: 200px;
 }
