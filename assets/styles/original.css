@@ -121,6 +121,7 @@ blockquote .blockquote-footer::before {
 }
 
 .red_line {
+  margin: 0 auto;
   margin-top: 400px;
   width: 96%;
   height: 5px;
@@ -158,7 +159,7 @@ blockquote .blockquote-footer::before {
   width: 0px;
   height: 0px;
   border-right: 60px solid transparent;
-  border-top: 60px solid rgb(41, 172, 233);
+  border-top: 60px solid #303030;
   border-left: 60px solid transparent;
 }
 
@@ -166,6 +167,6 @@ blockquote .blockquote-footer::before {
   width: 0px;
   height: 0px;
   border-right: 60px solid transparent;
-  border-top: 60px solid rgb(0, 255, 128);
+  border-top: 60px solid #F04937;
   border-left: 60px solid transparent;
 }
