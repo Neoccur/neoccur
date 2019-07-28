@@ -29,13 +29,13 @@ ol {
 }
 .nav-normal {
   background-color:#333;
+  padding: 2rem;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
 .nav-scroll {
   background-color:transparent;
-  padding: 2rem;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }

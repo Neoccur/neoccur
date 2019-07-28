@@ -7,18 +7,16 @@ function underConstruction() {
 };
 
 function languageClickEvent(lang) {
-  switch (lang) {
-    case "en":
-      document.location.href = "http://neoccur.com";
-      break;
-    default:
+  if (lang == "en") {
+      document.location.href = "http://neoccur.com/";
+  }
+  else {
       document.location.href = "http://neoccur.com/"+ lang + "/";
   };
 
 };
 
 function navBarReact() {
-  console.log("scrolled" + document.documentElement.scrollTop);
   let myNav = document.getElementById('myNav');
 
     if (document.documentElement.scrollTop > 500) {
