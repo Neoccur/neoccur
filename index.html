@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Neoccur</title>
+    <link rel="icon" href="assets/images/NeoccurFavicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="assets/styles/original.css" />
@@ -11,8 +12,8 @@
     <!-- The JavaScript library in main.js -->
     <script src="main.js"></script>
   </head>
-  <body onload="underConstruction()">
-    <nav class="NavigationBar">
+  <body onload="underConstruction()" onscroll="navBarReact()">
+    <nav class="NavigationBar" id="myNav">
       <div class="nav-home">
         <a href="index.html">Home</a>
       </div>
@@ -107,5 +108,6 @@
 
 <blockquote class="quote">
   <h1><i class="fas fa-quote-left"></i> We don't meet anyone by chance <i class="fas fa-quote-right"></i></h1>
-  <h4 class="blockquote-footer">Avijeet Das</h4>
-</blockquote>
+  <h2 class="blockquote-footer">Avijeet Das</h2>
+  <h1><i class="fas fa-quote-left"></i> The important thing is not to stop questioning. Curiosity has its own reason for existing. <i class="fas fa-quote-right"></i></h1>
+  <h2 class="blockquote-footer">Albert Einstein</h2>
