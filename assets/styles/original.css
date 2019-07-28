@@ -131,12 +131,12 @@ blockquote .blockquote-footer::before {
   content: "\2014 \00A0";
 }
 
-.blue_line {
+.red_line {
   margin: 0 auto;
   margin-top: 400px;
   width: 96%;
   height: 5px;
-  background-color: #15bae8;
+  background-color: #d4402c;
   border-radius: 40%;
   margin-bottom: 200px;
 }
