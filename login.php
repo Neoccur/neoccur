@@ -11,7 +11,7 @@
         "UserName" => "neoccurcecdev", // Set the mysql username
         "UserKey" => "devPasswordNeoccur150", // Set the mysql database password
         "DatabaseName" => "neoccurcecdev", // BON TA COMPRIS ! Yes nom dla base..
-        "TableName" => "authentification" // Nom du Tableau utiliser pour l'authentification. T'es feignant IlaX - Oxyde 
+        "TableName" => "authentification" // Nom du Tableau utiliser pour l'authentification. T'es feignant IlaX - Oxyde
     );
 
     $HttpClient = array
@@ -48,7 +48,7 @@
 
             // Create the connection beetween the client and the server.
             $MysqlClient = mysqli_connect($MysqlServer["HostName"], $MysqlServer["UserName"], $MysqlServer["UserKey"], $MysqlServer["DatabaseName"]);
-            
+
             // Check if there is any occured error with the created connection
             if ($MysqlClient == true)
             {
@@ -91,18 +91,9 @@
             <!-- This is very complex to understand, this is a title ! It's means that when a client connect to the server, he can see the 'Neoccur - Login' title in his tab ! -->
             <title>Neoccur - Login</title>
             <link rel="stylesheet" type="text/css" href="assets/styles/original.css" />
+            <script src="main.js"></script>
         </head>
-        <script>
-            function LanguageClickEvent(Language) {
-                if (Language == 0) {
-                // English
-                document.location.href = "http://neoccur.com";
-                } else if (Language == 1) {
-                // French
-                document.location.href = "http://neoccur.com/fr/";
-                }
-            }
-        </script>
+
         <body>
             <nav class="NavigationBar">
                 <div class="nav-home">
@@ -113,8 +104,8 @@
                         <li>
                             <img class="Language" src="assets/images/language.png" alt="Language" />
                             <ul>
-                            <li onclick="LanguageClickEvent(0);"><img src="assets/images/flags/us.png" width="38px" height="auto" alt="EN" /></li>
-                            <li onclick="LanguageClickEvent(1);"><img src="assets/images/flags/fr.png" width="38px" height="auto" alt="FR" /></li>
+                            <li onclick="LanguageClickEvent('eng');"><img src="assets/images/flags/us.png" width="38px" height="auto" alt="EN" /></li>
+                            <li onclick="LanguageClickEvent('fr');"><img src="assets/images/flags/fr.png" width="38px" height="auto" alt="FR" /></li>
                             </ul>
                         </li>
                     </div>
@@ -131,7 +122,7 @@
                     if ($_GET["error"] == "not_filled_credential")
                     {
                         ?>
-                <p>Please, fill all the credential</p>
+                <p>Please, fill all the credentials</p>
                         <?php
                     }
                     else if ($_GET["error"] == "not_valid_credential")
@@ -193,7 +184,7 @@
 
             break;
         default:
-            
+
             // The method used by the client is not handled by our server, for security reasons we dont interpret it
             // We redirect our client to the main page with the 'GET' method
             HttpClientRedirect("/");
@@ -201,7 +192,7 @@
             break;
     }
 
-    // REPARTION DES DIFFERENTES UTILITEES DES LIGNES DE CODE
+    // REPARTITION DES DIFFERENTES UTILITEES DES LIGNES DE CODE
     // 90% : comments (include 80% stupid comments and only 10% of serious comments. Yes this is not a engineer's book)
     // 10% : code (include 9.99% of code pas terrible and 0.01% of serious code)
 

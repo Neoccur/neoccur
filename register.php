@@ -50,7 +50,7 @@
 
             // Create the connection beetween the client and the server.
             $MysqlClient = mysqli_connect($MysqlServer["HostName"], $MysqlServer["UserName"], $MysqlServer["UserKey"], $MysqlServer["DatabaseName"]);
-            
+
             // Check if there is any occured error with the created connection
             if ($MysqlClient == true)
             {
@@ -101,7 +101,7 @@
 
             // Create the connection beetween the client and the server.
             $MysqlClient = mysqli_connect($MysqlServer["HostName"], $MysqlServer["UserName"], $MysqlServer["UserKey"], $MysqlServer["DatabaseName"]);
-            
+
             // Check if there is any occured error with the created connection
             if ($MysqlClient == true)
             {
@@ -164,21 +164,12 @@
 <!DOCTYPE html>
 <html>
         <head>
-            <!-- This is very complex to understand, this is a title ! It's means that when a client connect to the server, he can see the 'Neoccur - Register' title in his tab ! -->
-            <title>Neoccur - Register</title>
+            <!-- This is very complex to understand, this is a title ! It's means that when a client connect to the server, he can see the 'Neoccur - Login' title in his tab ! -->
+            <title>Neoccur - Sign Up/title>
             <link rel="stylesheet" type="text/css" href="assets/styles/original.css" />
+            <script src="main.js"></script>
         </head>
-        <script>
-            function LanguageClickEvent(Language) {
-                if (Language == 0) {
-                // English
-                document.location.href = "http://neoccur.com";
-                } else if (Language == 1) {
-                // French
-                document.location.href = "http://neoccur.com/fr/";
-                }
-            }
-        </script>
+
         <body>
             <nav class="NavigationBar">
                 <div class="nav-home">
@@ -189,8 +180,8 @@
                         <li>
                             <img class="Language" src="assets/images/language.png" alt="Language" />
                             <ul>
-                            <li onclick="LanguageClickEvent(0);"><img src="assets/images/flags/us.png" width="38px" height="auto" alt="EN" /></li>
-                            <li onclick="LanguageClickEvent(1);"><img src="assets/images/flags/fr.png" width="38px" height="auto" alt="FR" /></li>
+                            <li onclick="LanguageClickEvent('eng');"><img src="assets/images/flags/us.png" width="38px" height="auto" alt="EN" /></li>
+                            <li onclick="LanguageClickEvent('fr');"><img src="assets/images/flags/fr.png" width="38px" height="auto" alt="FR" /></li>
                             </ul>
                         </li>
                     </div>
@@ -277,7 +268,7 @@
 
             break;
         default:
-            
+
             // The method used by the client is not handled by our server, for security reasons we dont interpret it
             // We redirect our client to the main page with the 'GET' method
             HttpClientRedirect("/");
