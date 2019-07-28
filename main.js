@@ -1,7 +1,7 @@
 // Welcome to the JavaScript library !
 // You may call these functions in your HTML anytime
 // As long as this file is loaded before-hand
-resolution();
+
 function resolution() {
   let res = document.getElementById('res');
   res.innerHTML = "Resolution: " + window.innerWidth + "x" + window.innerHeight;
@@ -9,6 +9,7 @@ function resolution() {
 
 function underConstruction() {
   alert("This website is currently under construction and is not fully operational. You have been warned.");
+  resolution();
 };
 
 function languageClickEvent(lang) {

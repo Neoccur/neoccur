@@ -14,6 +14,7 @@ ol {
   min-width: 1920px;
   min-height: 969px;
   text-align: center;
+  margin: auto;
 }
 
 .NavigationBar {
