@@ -15,7 +15,7 @@ ol {
   margin: auto;
 }
 
-.logo {
+#logo {
   position: absolute;
   margin-top: 15%;
   left: 46.7%;
@@ -49,6 +49,19 @@ ol {
 .nav-scroll {
   background-color:transparent;
   -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.logo-normal {
+  position: absolute;
+  margin-top: 15%;
+  left: 46.7%;
+  z-index: 1001;
+  transition: all 0.3s ease-in;
+}
+
+.logo-scroll{
+  position: fixed;
   transition: all 0.3s ease-in;
 }
 

@@ -25,7 +25,7 @@ function languageClickEvent(lang) {
 function navBarReact() {
   let myNav = document.getElementById('myNav');
 
-    if (document.documentElement.scrollTop > 500) {
+    if (document.documentElement.scrollTop > 300) {
         myNav.classList.add("nav-normal");
         myNav.classList.remove("nav-scroll");
     }
@@ -33,6 +33,21 @@ function navBarReact() {
     else {
         myNav.classList.add("nav-scroll");
         myNav.classList.remove("nav-normal");
+    };
+
+};
+
+function logoReact() {
+  let logo = document.getElementById('logo');
+
+    if (document.documentElement.scrollTop > 300) {
+        logo.classList.add("logo-normal");
+        logo.classList.remove("logo-scroll");
+    }
+
+    else {
+        logo.classList.add("logo-scroll");
+        logo.classList.remove("logo-normal");
     };
 
 };
