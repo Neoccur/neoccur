@@ -16,10 +16,9 @@ ol {
 }
 
 .logo {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  left: 50%
+  position: absolute;
+  margin-top: 15%;
+  left: 46.7%;
   z-index: 1001;
 }
 
