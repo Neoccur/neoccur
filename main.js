@@ -22,13 +22,13 @@ function navBarReact() {
   let myNav = document.getElementById('myNav');
 
     if (document.documentElement.scrollTop > 500) {
-        myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
+        myNav.classList.add("nav-normal");
+        myNav.classList.remove("nav-scroll");
     }
 
     else {
-        myNav.classList.add("nav-transparent");
-        myNav.classList.remove("nav-colored");
+        myNav.classList.add("nav-scroll");
+        myNav.classList.remove("nav-normal");
     };
 
 };

@@ -27,12 +27,17 @@ ol {
 .nav-links li ul {
   margin-bottom: 0 !important;
 }
-.nav-colored {
+.nav-normal {
   background-color:#333;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
-.nav-transparent {
+.nav-scroll {
   background-color:transparent;
+  padding: 2rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .Language {
