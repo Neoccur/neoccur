@@ -42,18 +42,3 @@ function navBarReact() {
     };
 
 };
-
-function logoReact() {
-  let logo = document.getElementById('logo');
-
-    if (document.documentElement.scrollTop > 300) {
-        logo.classList.add("logo-normal");
-        logo.classList.remove("logo-scroll");
-    }
-
-    else {
-        logo.classList.add("logo-scroll");
-        logo.classList.remove("logo-normal");
-    };
-
-};

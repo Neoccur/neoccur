@@ -46,13 +46,6 @@ ol {
   margin: auto;
 }
 
-#logo {
-  position: absolute;
-  margin-top: 15%;
-  left: 46%;
-  z-index: 10;
-}
-
 .NavigationBar {
   display: flex;
   position: fixed;
@@ -72,7 +65,7 @@ ol {
 }
 .nav-normal {
   background-color:#333;
-  padding: 2rem;
+  padding: 1rem;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -81,19 +74,7 @@ ol {
   background-color:transparent;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-}
-
-.logo-normal {
-  position: absolute;
-  margin-top: 15%;
-  left: 46.7%;
-  z-index: 20;
-  transition: all 0.3s ease-in;
-}
-
-.logo-scroll{
-  position: fixed;
-  transition: all 0.3s ease-in;
+  padding: 2rem;
 }
 
 .Language {
