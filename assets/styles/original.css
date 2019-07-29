@@ -10,6 +10,37 @@ ol {
   list-style: none;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 2rem;
+  padding: 0px;
+  background-color: #e87e15;
+  border: 2px solid #e87e15;
+  z-index: 10;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #e8a915;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
 #video {
   width: 100%;
   margin: auto;
@@ -18,8 +49,8 @@ ol {
 #logo {
   position: absolute;
   margin-top: 15%;
-  left: 46.7%;
-  z-index: 1001;
+  left: 46%;
+  z-index: 10;
 }
 
 .NavigationBar {
@@ -27,7 +58,7 @@ ol {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 20;
   justify-content: space-between;
   font-weight: bold;
 }
@@ -56,7 +87,7 @@ ol {
   position: absolute;
   margin-top: 15%;
   left: 46.7%;
-  z-index: 1001;
+  z-index: 20;
   transition: all 0.3s ease-in;
 }
 
