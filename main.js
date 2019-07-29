@@ -7,6 +7,12 @@ function resolution() {
   res.innerHTML = "Resolution: " + window.innerWidth + "x" + window.innerHeight;
 };
 
+function mousePos() {
+  let mouseX = event.clientX;
+  let mouseY = event.clientY;
+  mouse.innerHTML = "Mouse x: " + mouseX + "  y: " + mouseY;
+};
+
 function underConstruction() {
   alert("This website is currently under construction and is not fully operational. You have been warned.");
   resolution();
