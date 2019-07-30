@@ -10,12 +10,48 @@ ol {
   list-style: none;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0px;
+  padding: 0px;
+  background-color: #e87e15;
+  border: 2px solid #e87e15;
+  z-index: 10;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #e8a915;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  filter: brightness(0%);
+}
+
+#video {
+  width: 100%;
+  margin: auto;
+}
+
 .NavigationBar {
   display: flex;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 20;
   justify-content: space-between;
   font-weight: bold;
 }
@@ -28,11 +64,17 @@ ol {
   margin-bottom: 0 !important;
 }
 .nav-colored {
-  background-color:#303030;
+  background-color:#333;
+  padding: 1rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .nav-transparent {
   background-color:transparent;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  padding: 2rem;
 }
 
 .Language {
@@ -131,7 +173,7 @@ blockquote .blockquote-footer::before {
   margin-top: 400px;
   width: 96%;
   height: 5px;
-  background-color: #F04937;
+  background-color: #d4402c;
   border-radius: 40%;
   margin-bottom: 200px;
 }
@@ -139,25 +181,25 @@ blockquote .blockquote-footer::before {
 .colored_section_1 {
   margin-top: 200px;
   position: relative;
-  background-color: #303030;
+  background-color: #d4402c;
   margin: 0%;
-  height: 500px;
+  height: 375px;
   width: 100%;
 }
 
 .colored_section_2 {
   position: relative;
-  background-color: #F04937;
+  background-color: #e87e15;
   margin: 0%;
-  height: 500px;
+  height: 375px;
   width: 100%;
 }
 
 .colored_section_3 {
   position: relative;
-  background-color: #303030;
+  background-color: #e8a915;
   margin: 0%;
-  height: 500px;
+  height: 375px;
   width: 100%;
 }
 
@@ -165,7 +207,7 @@ blockquote .blockquote-footer::before {
   width: 0px;
   height: 0px;
   border-right: 60px solid transparent;
-  border-top: 60px solid #303030;
+  border-top: 60px solid #d4402c;
   border-left: 60px solid transparent;
 }
 
@@ -173,6 +215,6 @@ blockquote .blockquote-footer::before {
   width: 0px;
   height: 0px;
   border-right: 60px solid transparent;
-  border-top: 60px solid #F04937;
+  border-top: 60px solid #e87e15;
   border-left: 60px solid transparent;
 }
