@@ -10,14 +10,50 @@ ol {
   list-style: none;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: #ffba17 !important;
+  border-color: #ffba17 !important;
+}
+
+.btn-primary:hover {
+  background-color: #efa800 !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.text-black {
+  color: #212529 !important;
+}
+
 .NavigationBar {
   display: flex;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
   justify-content: space-between;
+  flex-direction: row;
   font-weight: bold;
+  background-color: #1a1a1a;
+  transition: all 0.3s ease-in;
+}
+
+/*.nav-scroll {
+  padding: 1rem 0;
+  background-color: transparent;
+}*/
+
+.XL-top {
+  z-index: 1000;
+}
+
+.nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .nav-links {
@@ -26,13 +62,6 @@ ol {
 
 .nav-links li ul {
   margin-bottom: 0 !important;
-}
-.nav-colored {
-  background-color:#303030;
-}
-
-.nav-transparent {
-  background-color:transparent;
 }
 
 .Language {
@@ -85,9 +114,7 @@ ol {
 }
 
 .NavigationBar a {
-  float: left;
   color: #f2f2f2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -96,14 +123,126 @@ ol {
 .NavigationBar a:hover {
   background: gray;
   color: black;
+  text-decoration: none;
+}
+
+.header-index .container {
+  margin-top: 0;
+  padding: 20vh 0px;
 }
 
 .container {
   margin-top: 12px;
 }
 
+@media screen and (min-width: 1200px) {
+  .header-index .container {
+    max-width: 1300px !important;
+  }
+}
+
 .container-nb {
   text-align: center;
+}
+
+.header-index {
+  background-color: black;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-con-nb {
+  display: flex;
+}
+
+.header-content-typography {
+  display: inline-block;
+}
+
+.header-content {
+  width: 533px;
+}
+
+.content-title {
+  margin-bottom: 30px;
+}
+
+.content-title span::before {
+  content: "A new way to";
+  animation: change1 infinite 20s;
+}
+
+.content-title span::after {
+  content: "meet new freinds";
+  animation: change2 infinite 20s;
+}
+
+@keyframes change1 {
+  0% {
+    content: "A new way to";
+  }
+  25% {
+    content: "Another quote";
+  }
+  50% {
+    content: "theXtroyer is";
+  }
+  75% {
+    content: "Why does Oxyde2";
+  }
+  100% {
+    content: "Lorem ipsum dolor";
+  }
+}
+
+@keyframes change2 {
+  0% {
+    content: "meet new freinds";
+  }
+  25% {
+    content: "for you (who?)";
+  }
+  50% {
+    content: "the best";
+  }
+  75% {
+    content: "love emojis";
+  }
+  100% {
+    content: "sit amet wow";
+  }
+}
+
+.header-content {
+  display: flex;
+}
+
+.screen {
+  width: 215px;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+}
+
+.screen1 {
+  z-index: 3;
+  position: relative;
+  left: 107.5px;
+}
+
+.screen2 {
+  z-index: 2;
+  position: relative;
+  top: -25px;
+}
+
+.screen3 {
+  z-index: 1;
+  position: relative;
+  top: -50px;
+  left: -107.5px;
 }
 
 .carousel-item {
@@ -122,57 +261,42 @@ ol {
   background-repeat: no-repeat;
 }
 
+.colored-quote-1 {
+  background-color: #ffba17;
+}
+
+.colored-quote-2 {
+  background-color: #f04937;
+}
+
+.content-quote {
+  padding: 40px 0;
+}
+
 blockquote .blockquote-footer::before {
   content: "\2014 \00A0";
 }
 
-.red_line {
-  margin: 0 auto;
-  margin-top: 400px;
-  width: 96%;
-  height: 5px;
-  background-color: #F04937;
-  border-radius: 40%;
-  margin-bottom: 200px;
+.quote-portrait {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
-.colored_section_1 {
-  margin-top: 200px;
-  position: relative;
-  background-color: #303030;
-  margin: 0%;
-  height: 500px;
+.showcase-thumbnail {
   width: 100%;
+  height: 300px;
 }
 
-.colored_section_2 {
-  position: relative;
-  background-color: #F04937;
-  margin: 0%;
-  height: 500px;
-  width: 100%;
+.showcase-thumbnail img {
+  object-fit: cover;
 }
 
-.colored_section_3 {
-  position: relative;
-  background-color: #303030;
-  margin: 0%;
-  height: 500px;
-  width: 100%;
+.showcase-text-lead {
+  font-size: 15px !important;
 }
 
-.triangle_1 {
-  width: 0px;
-  height: 0px;
-  border-right: 60px solid transparent;
-  border-top: 60px solid #303030;
-  border-left: 60px solid transparent;
-}
-
-.triangle_2 {
-  width: 0px;
-  height: 0px;
-  border-right: 60px solid transparent;
-  border-top: 60px solid #F04937;
-  border-left: 60px solid transparent;
+.footer-copyright {
+  background-color: #1a1a1a;
 }
