@@ -5,19 +5,33 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #c1c1c1;
+  background: #e0e0e0;
   border-radius: 5px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-image: url('../images/galaxy.jpg');
+  background-image: url('../images/textures/scroll-handle.png');
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: url('../images/galaxy-dark.jpg');
+  filter: brightness(50%);
+}
+
+::-webkit-scrollbar-button {
+  width: 10px;
+  height: 15px;
+  border-radius: 5px;
+  background: #d1d1d1;
+}
+::-webkit-scrollbar-button:increment:hover {
+  background: #0396ff;
+}
+
+::-webkit-scrollbar-button:decrement:hover {
+  background: #d9340f;
 }

@@ -13,7 +13,7 @@ ol {
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  bottom: 2rem;
+  bottom: 0px;
   padding: 0px;
   background-color: #e87e15;
   border: 2px solid #e87e15;
@@ -31,14 +31,14 @@ ol {
   color: white;
   font-weight: bold;
   float: right;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 20px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .closebtn:hover {
-  color: black;
+  filter: brightness(0%);
 }
 
 #video {
@@ -63,14 +63,14 @@ ol {
 .nav-links li ul {
   margin-bottom: 0 !important;
 }
-.nav-normal {
+.nav-colored {
   background-color:#333;
   padding: 1rem;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
-.nav-scroll {
+.nav-transparent {
   background-color:transparent;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
