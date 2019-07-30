@@ -300,3 +300,7 @@ blockquote .blockquote-footer::before {
 .footer-copyright {
   background-color: #1a1a1a;
 }
+
+.sign-body {
+  background: linear-gradient(to right, #ffba17, #f04937) !important;
+}
