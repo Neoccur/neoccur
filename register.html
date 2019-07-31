@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="assets/styles/original.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/register.css" />
     <!-- Bootstrap and font awesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
@@ -38,10 +39,10 @@
       </div>
     </nav>
     <section>
-      <div class="container">
+      <div class="container container-wrapper">
         <div class="row">
-          <div class="col-sm-12 bg-dark">
-            <h1>hello</h1>
+          <div class="col-sm sign-form-body">
+            <h1 class="text-center text-white">Sign up</h1>
           </div>
         </div>
       </div>
@@ -92,47 +93,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
-<?php
-   break;
-   case "POST":
-   
-       // So, enfaite this machain chouaitte truc bidule is here to allow the authentication because si non it will be the anarchy thermo nucléaire because there is a lot of singes sur internet.
-       if (isset($_POST["ClientName"]) && isset($_POST["ClientEmail"]) && isset($_POST["ClientKey"]) && isset($_POST["ClientKeyCheck"]) && $_POST["ClientName"] != "" && $_POST["ClientEmail"] != "" && $_POST["ClientKey"] != "" && $_POST["ClientKeyCheck"] != "")
-       {
-           $ClientNameQueryToken = MysqlClientQuery("UserName", $_POST["ClientName"], "UserToken")[0];
-           $ClientEmailQueryToken = MysqlClientQuery("UserEmail", $_POST["ClientEmail"], "UserToken")[0];
-   
-           // On est des hackers, Ouai! Ah merde ya un système d'authentification, bon bah tampis! ... Geniuses! :D
-           if (isset($ClientNameQueryToken) && $ClientNameQueryToken != "")
-           {
-               HttpClientRedirect("/register?error=not_available_username");
-           }
-           else if ($_POST["ClientKey"] != $_POST["ClientKeyCheck"])
-           {
-               HttpClientRedirect("/register?error=not_match_userkey");
-           }
-           else if (isset($ClientNameQueryToken) && $ClientNameQueryToken != "")
-           {
-               HttpClientRedirect("/register?error=not_available_useremail");
-           }
-           else
-           {
-               CreateAccount($_POST["ClientName"], $_POST["ClientEmail"], $_POST["ClientKey"]);
-               HttpClientRedirect("/");
-           }
-       }
-       else
-       {
-           HttpClientRedirect("/register?error=not_filled_credential");
-       }
-   
-   break;
-   default:
-   
-   // The method used by the client is not handled by our server, for security reasons we dont interpret it
-   // We redirect our client to the main page with the 'GET' method
-   HttpClientRedirect("/");
-   
-   break;
-   }
-   ?>

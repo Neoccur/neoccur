@@ -1,0 +1,18 @@
+.sign-body {
+  background: linear-gradient(to right, #ffba17, #f04937) !important;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-dark {
+  background-color: #1a1a1a !important;
+}
+
+.sign-form-body {
+  border-radius: 10px;
+  background-color: #1a1a1a !important;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
