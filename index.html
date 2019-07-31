@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="assets/styles/original.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/scrollbar.css" />
     <!-- Bootstrap and font awesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
@@ -25,7 +26,7 @@
       <div class="nav-links">
         <div id="MenuSlide">
           <li>
-            <img class="Language" src="assets/images/language.png" alt="Language" />
+            <img class="Language" src="assets/images/textures/language.png" alt="Language" />
             <ul>
               <li onclick="languageClickEvent('en');"><img src="assets/images/flags/us.png" width="38px" height="auto" alt="EN" /></li>
               <li onclick="languageClickEvent('fr');"><img src="assets/images/flags/fr.png" width="38px" height="auto" alt="FR" /></li>
@@ -58,6 +59,7 @@
         </div>
       </div>
     </header>
+
     <!-- Page Content -->
     <section class="py-5">
       <div class="container">
@@ -65,8 +67,10 @@
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, recusandae dicta. Cupiditate nam dicta, maiores, mollitia unde assumenda laboriosam voluptatem omnis at molestias autem iusto ex reprehenderit iure voluptatum in.</p>
         <hr />
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus velit eius porro accusantium debitis error veniam cumque quaerat. Nostrum atque aliquid ea quos. Quam voluptatem suscipit quae. Totam, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cum deserunt sequi laboriosam commodi aut similique labore, fuga pariatur deleniti, odio adipisci molestias consequuntur eligendi consequatur cumque provident temporibus perspiciatis!</p>
-        <img class="w-100 mb-5" src="http://wowslider.com/sliders/demo-81/data1/images/hawk512466.jpg" alt="" />
-        <h1 class="font-weight-light">I am having a hard time lol</h1>
+          <video id="video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="assets/videos/3DPrintTimelapse.mp4" type="video/mp4" />
+          </video>
+        <h1 class="font-weight-light">Wow, a 3DPrint timelapse &#128514;</h1>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, rem corrupti ab incidunt saepe deleniti ut sapiente fugit vero iusto optio facere accusantium eum natus corporis suscipit perferendis fuga enim.
       </div>
     </section>
@@ -169,6 +173,20 @@
     <footer>
       <div class="footer-copyright text-center text-white py-4">Copyright 2019 Neoccur All Rights Reserved.</div>
     </footer>
+
+    <blockquote class="quote">
+      <h1><i class="fas fa-quote-left"></i> We don't meet anyone by chance <i class="fas fa-quote-right"></i></h1>
+      <h2 class="blockquote-footer">Avijeet Das</h2>
+      <h1><i class="fas fa-quote-left"></i> The important thing is not to stop questioning. Curiosity has its own reason for existing. <i class="fas fa-quote-right"></i></h1>
+      <h2 class="blockquote-footer">Albert Einstein</h2>
+    </blockquote>
+
+    <div class="sticky">
+      <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">&times;</span>
+        <strong>Warning!</strong> This website is currently under construction and is not fully operational.
+      </div>
+    </div>
 
     <!-- Optional JavaScript for bootstrap and font awesome-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
