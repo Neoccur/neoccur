@@ -135,6 +135,10 @@ ol {
   margin-top: 12px;
 }
 
+.container video {
+  width: 100%;
+}
+
 @media screen and (min-width: 1200px) {
   .header-index .container {
     max-width: 1180px !important;
