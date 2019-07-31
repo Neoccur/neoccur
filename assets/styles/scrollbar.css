@@ -13,7 +13,8 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-image: url('../images/textures/scroll-handle.png');
+  /*background-image: url('../images/textures/scroll-handle.png');*/
+  background-color: #f04937;
   border-radius: 5px;
 }
 
