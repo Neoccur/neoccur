@@ -45,6 +45,10 @@
       $email = $_POST[email];
       $password = $_post[password];
 
+      if (!empty($username) || !empty($email) || !empty($password)) {
+          
+      }
+
 
     ?>
 
