@@ -48,22 +48,22 @@
                   <h5 class="card-title text-center">Sign up</h5>
                   <form class="form-signin">
                     <div class="form-label-group">
-                      <input type="text" id="inputUser" class="form-control" placeholder="Username" required autofocus />
+                      <input name="username" type="text" id="inputUser" class="form-control" placeholder="Username" required autofocus />
                       <label for="inputUser">Username</label>
                     </div>
                     <div class="form-label-group">
-                      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required />
+                      <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required />
                       <label for="inputEmail">Email address</label>
                     </div>
 
                     <div class="form-label-group">
-                      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required />
+                      <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required />
                       <label for="inputPassword">Password</label>
                     </div>
 
                     <div class="form-label-group">
-                      <input type="password" id="inputPassword" class="form-control" placeholder="Repeat password" required />
-                      <label for="inputPassword">Repeat password</label>
+                      <input type="password" id="inputPassword-repeat" class="form-control" placeholder="Repeat password" required />
+                      <label for="inputPassword-repeat">Repeat password</label>
                     </div>
 
                     <div class="custom-control custom-checkbox mb-3">
@@ -80,6 +80,23 @@
         </div>
       </div>
     </section>
+
+    <!--repeat password checker-->
+    <script>
+      var password = document.getElementById("inputPassword"),
+        confirm_password = document.getElementById("inputPassword-repeat");
+
+      function validatePassword() {
+        if (password.value != confirm_password.value) {
+          confirm_password.setCustomValidity("Passwords Don't Match, please repeat the password again");
+        } else {
+          confirm_password.setCustomValidity("");
+        }
+      }
+
+      password.onchange = validatePassword;
+      confirm_password.onkeyup = validatePassword;
+    </script>
 
     <!-- Code injected by live-server -->
     <script type="text/javascript">
