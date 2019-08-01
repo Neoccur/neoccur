@@ -136,7 +136,17 @@ ol {
   margin-top: 12px;
 }
 
+.container video {
+  width: 100%;
+}
+
 @media screen and (min-width: 1200px) {
+  .header-index .container {
+    max-width: 1180px !important;
+  }
+}
+
+@media screen and (min-width: 1336px) {
   .header-index .container {
     max-width: 1300px !important;
   }
@@ -160,11 +170,13 @@ ol {
 }
 
 .header-content-typography {
-  display: inline-block;
+  display: block;
 }
 
 .header-content {
+  display: flex;
   width: 533px;
+  height: 383px;
 }
 
 .content-title {
@@ -215,10 +227,6 @@ ol {
   100% {
     content: "sit amet wow";
   }
-}
-
-.header-content {
-  display: flex;
 }
 
 .screen {
