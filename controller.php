@@ -41,51 +41,46 @@
 
     <?php
 
-      $username = $_POST[username];
-      $email = $_POST[email];
-      $password = $_post[password];
+$username = $_POST[username];
+$email = $_POST[email];
+$password = $_post[password];
 
-      if (!empty($username) || !empty($email) || !empty($password)) {
-          # connection
-       $host = "neoccurcecdev.mysql.db";
-       $dbUsername = "neoccurcecdev";
-       $dbpassword = "devPasswordNeoccur150";
-       $dbname = "Authentification";
+if (!empty($username) || !empty($email) || !empty($password)) {
+          // connection
+	$host = "neoccurcecdev.mysql.db";
+	$dbUsername = "neoccurcecdev";
+	$dbpassword = "devPasswordNeoccur150";
+	$dbname = "Authentification";
 
-        #createconnection
-        $conn = new mysqli($host, $dbUsername, $dbpassword, $dbname);
-        if (mysqli_connect_error()) {
-           die('connect error('. mysqli_connnect_errorno() . ')'. mysqli_connect_error());
-        } else {
-            $SELECT = "SELECT email from users where email = ? limit 1"
-            $INSERT = "INSERT INTO `users`( `username`, `email`, `password`) VALUES ( ?, ?, ?)";
+        //createconnection
+	$conn = new mysqli($host, $dbUsername, $dbpassword, $dbname);
+	if (mysqli_connect_error()) {
+		die('connect error(' . mysqli_connnect_errorno() . ')' . mysqli_connect_error());
+	} else {
+		$SELECT = "SELECT email from users where email = ? limit 1"
+										$INSERT = "INSERT INTO `users`( `username`, `email`, `password`) VALUES ( ?, ?, ?)";
 
-            #prepare statment
-            $stmt = $conn->prepare($SELECT)
-            $stmt->bind_param("s", $email)
-            $stmt->excute();
-            $stmt->bind_result();
-            $rnum =$stmt->num_rows;
+            //prepare statment
+		$stmt = $conn->prepare($SELECT) $stmt->bind_param("s", $email) $stmt->excute();
+		$stmt->bind_result();
+		$rnum = $stmt->num_rows;
 
-            if($rnum==0) {
-                $stmt->close();
+		if ($rnum == 0) {
+			$stmt->close();
 
-                $stmt = $conn->prepare($INSERT);
-                $stmt->bind_param("s", $email);
-                $stmt->execute();
-                $username = "welcome $username";
-                $email = "you email addres is $email, this is a test bla bla bla, this will be the welcome page.. ish";
-            } else {
-                echo "<p> hello! this is the error and here is the same form, just that its red (because the user had a problem)";
-                die();
+			$stmt = $conn->prepare($INSERT);
+			$stmt->bind_param("s", $email);
+			$stmt->execute();
+			$username = "welcome $username";
+			$email = "you email addres is $email, this is a test bla bla bla, this will be the welcome page.. ish";
+		} else {
+			echo "<p> hello! this is the error and here is the same form, just that its red (because the user had a problem)";
+			die();
+		}
+	}
+}
 
-            }
-        }
-
-      }
-
-
-    ?>
+?>
 
 1
     <!-- Optional JavaScript for bootstrap and font awesome-->
