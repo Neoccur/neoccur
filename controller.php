@@ -13,7 +13,6 @@
     <!-- The JavaScript library in main.js -->
     <script src="main.js"></script>
   </head>
-
   <body class="sign-body">
     <nav class="NavigationBar nav-scroll" id="myNav">
       <div class="nav-links">
@@ -41,27 +40,29 @@
 
     <?php
 
-$username = $_POST[username];
-$email = $_POST[email];
-$password = $_post[password];
+$username = $_POST["username"];
+$email = $_POST["email"];
+$password = $_POST["password"];
 
 if (!empty($username) || !empty($email) || !empty($password)) {
-          // connection
+      // connection
 	$host = "neoccurcecdev.mysql.db";
 	$dbUsername = "neoccurcecdev";
 	$dbpassword = "devPasswordNeoccur150";
 	$dbname = "Authentification";
 
-        //createconnection
+      //createconnection
 	$conn = new mysqli($host, $dbUsername, $dbpassword, $dbname);
 	if (mysqli_connect_error()) {
 		die('connect error(' . mysqli_connnect_errorno() . ')' . mysqli_connect_error());
 	} else {
-		$SELECT = "SELECT email from users where email = ? limit 1"
-										$INSERT = "INSERT INTO `users`( `username`, `email`, `password`) VALUES ( ?, ?, ?)";
+		$SELECT = "SELECT email from users where email = ? limit 1;";
+		$INSERT = "INSERT INTO `users`( `username`, `email`, `password`) VALUES ( ?, ?, ?);";
 
-            //prepare statment
-		$stmt = $conn->prepare($SELECT) $stmt->bind_param("s", $email) $stmt->excute();
+          //prepare statment
+        $stmt = $conn->prepare($SELECT);
+        $stmt->bind_param("s", $email);
+        $stmt->excute();
 		$stmt->bind_result();
 		$rnum = $stmt->num_rows;
 
