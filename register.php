@@ -4,7 +4,7 @@
     $Database = array
     (
         "HostName" => "",
-        "Name" => ""
+        "Name" => "",
         "UserName" => "",
         "UserPassword" => "",
 	"TableName" => ""
