@@ -40,9 +40,16 @@
 
     <?php
 
-$username = $_POST["username"];
-$email = $_POST["email"];
-$password = $_POST["password"];
+    if ($_SERVER["REQUEST_METHOD"] == "GET")
+{
+    // Handle GET Method here
+}
+else if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+
+$username = addslashes($_POST["username"]);
+$email = addslashes($_POST["email"]);
+$password = addslashes($_POST["password"]);
 
 if (!empty($username) || !empty($email) || !empty($password)) {
       // connection
@@ -62,7 +69,7 @@ if (!empty($username) || !empty($email) || !empty($password)) {
           //prepare statment
         $stmt = $conn->prepare($SELECT);
         $stmt->bind_param("s", $email);
-        $stmt->excute();
+        $stmt->execute();
 		$stmt->bind_result();
 		$rnum = $stmt->num_rows;
 
@@ -79,7 +86,10 @@ if (!empty($username) || !empty($email) || !empty($password)) {
 			die();
 		}
 	}
+  }
 }
+
+
 
 ?>
 
