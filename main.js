@@ -16,11 +16,11 @@ function languageClickEvent(lang) {
   }
 }
 
-var myNav = document.getElementById("myNav");
+/* var myNav = document.getElementById("myNav");
 window.onscroll = function() {
   if (window.scrollY >= 100) {
     myNav.classList.remove("nav-scroll");
   } else {
     myNav.classList.add("nav-scroll");
   }
-};
+};*/
