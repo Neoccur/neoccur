@@ -1,0 +1,88 @@
+.NavigationBar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  justify-content: space-between;
+  flex-direction: row;
+  font-weight: bold;
+  background-color: #1a1a1a;
+  transition: all 0.3s ease-in;
+}
+
+.nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li ul {
+  margin-bottom: 0 !important;
+}
+
+.Language {
+  padding: 8px 16px;
+}
+
+.Language:hover {
+  background-color: gray;
+}
+
+#MenuSlide ul {
+  text-align: center;
+}
+
+#MenuSlide li li {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 1.5s;
+  border-radius: 3px;
+  background: #444;
+  box-shadow: none;
+  border: none;
+  margin: 0px;
+  height: 28px;
+  padding-top: 3px;
+}
+
+#MenuSlide a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+#MenuSlide ul li a,
+#MenuSlide li:hover li a {
+  font-size: 1em;
+}
+
+#MenuSlide li li:hover {
+  background: #999;
+}
+
+#MenuSlide ul li:last-child {
+  border: none;
+}
+
+#MenuSlide li:hover li {
+  max-height: 32em;
+}
+
+.NavigationBar a {
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.NavigationBar a:hover {
+  background: gray;
+  color: black;
+  text-decoration: none;
+}

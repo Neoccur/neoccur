@@ -1,0 +1,45 @@
+.content-title span::before {
+  content: "A new way to";
+  animation: change1 infinite 20s;
+}
+
+.content-title span::after {
+  content: "meet new freinds";
+  animation: change2 infinite 20s;
+}
+
+@keyframes change1 {
+  0% {
+    content: "A new way to";
+  }
+  25% {
+    content: "Another quote";
+  }
+  50% {
+    content: "theXtroyer is";
+  }
+  75% {
+    content: "Why does Oxyde2";
+  }
+  100% {
+    content: "Lorem ipsum dolor";
+  }
+}
+
+@keyframes change2 {
+  0% {
+    content: "meet new freinds";
+  }
+  25% {
+    content: "for you (who?)";
+  }
+  50% {
+    content: "the best";
+  }
+  75% {
+    content: "love emojis";
+  }
+  100% {
+    content: "sit amet wow";
+  }
+}

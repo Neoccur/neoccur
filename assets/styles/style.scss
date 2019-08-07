@@ -1,0 +1,39 @@
+@import "_standard.scss";
+@import "_variables.scss";
+@import "_Navigationbar.scss";
+@import "_headers.scss";
+@import "_animations.scss";
+@import "_scrollbar.scss";
+@import "_register.scss";
+
+.quote-portrait {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.showcase-thumbnail {
+  width: 100%;
+  height: 300px;
+}
+
+.showcase-thumbnail img {
+  object-fit: cover;
+}
+
+.showcase-text-lead {
+  font-size: 15px !important;
+}
+
+.colored-quote-1 {
+  background-color: #ffba17;
+}
+
+.colored-quote-2 {
+  background-color: #f04937;
+}
+
+.content-quote {
+  padding: 40px 0;
+}

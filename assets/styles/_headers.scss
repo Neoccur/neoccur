@@ -1,0 +1,72 @@
+.header-index {
+  background-color: black;
+}
+
+.header-index .container {
+  margin-top: 0;
+  padding: 20vh 0px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-con-nb {
+  display: flex;
+}
+
+.header-content-typography {
+  display: block;
+}
+
+.header-content {
+  display: flex;
+  width: 533px;
+  height: 383px;
+}
+
+.content-title {
+  margin-bottom: 30px;
+}
+
+.screen {
+  width: 215px;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+}
+
+.screen1 {
+  z-index: 3;
+  position: relative;
+  left: 107.5px;
+}
+
+.screen2 {
+  z-index: 2;
+  position: relative;
+  top: -25px;
+}
+
+.screen3 {
+  z-index: 1;
+  position: relative;
+  top: -50px;
+  left: -107.5px;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel img {
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}

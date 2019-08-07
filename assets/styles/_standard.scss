@@ -1,0 +1,70 @@
+/*here we will overide all unwanted css, 
+plus overide some bootstrap css to get our own custom bootstrap,
+ please this is not a place for normal css*/
+
+/*overide some unwanted styling like padding and margin*/
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+.btn-primary {
+  color: #000000;
+  background-color: #ffba17 !important;
+  border-color: #ffba17 !important;
+}
+
+.btn-primary:hover {
+  background-color: #efa800 !important;
+}
+
+.XL-top {
+  z-index: 1000;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.text-black {
+  color: #212529 !important;
+}
+
+.container {
+  margin-top: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-index .container {
+    max-width: 1180px !important;
+  }
+}
+
+.footer-copyright {
+  background-color: #1a1a1a;
+}
+
+@media screen and (min-width: 1336px) {
+  .header-index .container {
+    max-width: 1300px !important;
+  }
+}
+
+.container video {
+  width: 100%;
+}
+
+.container-nb {
+  text-align: center;
+}
+
+blockquote .blockquote-footer::before {
+  content: "\2014 \00A0";
+}
