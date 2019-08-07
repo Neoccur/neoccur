@@ -53,10 +53,10 @@ $password = addslashes($_POST["password"]);
 
 if (!empty($username) || !empty($email) || !empty($password)) {
       // connection
-	$host = "neoccurcecdev.mysql.db";
-	$dbUsername = "neoccurcecdev";
+	$host = "neoccurcecdev.mysql.db";but 
+	$dbUsername = "neoccurcec";
 	$dbpassword = "devPasswordNeoccur150";
-	$dbname = "Authentification";
+	$dbname = "neoccurcecdev";
 
       //createconnection
 	$conn = new mysqli($host, $dbUsername, $dbpassword, $dbname);
