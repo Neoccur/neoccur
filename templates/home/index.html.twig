@@ -2,16 +2,6 @@
 
 {% block title %}Neoccur{% endblock %}
 
-{% block stylesheets %}
-
-    {{ parent() }}
-
-    <!-- Our CSS files -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/original.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/scrollbar.css') }}" />
-
-{% endblock %}
-
 {% block bodyAttributes %}onload="underConstruction()"{% endblock %}
 
 {% block navClasses %}NavigationBar nav-scroll{% endblock %}
