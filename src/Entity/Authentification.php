@@ -36,6 +36,8 @@ class Authentification
      */
     private $userToken;
 
+    public $repeatKey;
+
     public function getId(): ?int
     {
         return $this->id;
