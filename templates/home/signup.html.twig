@@ -23,28 +23,28 @@
                     
 
                     <div class="form-label-group">
-                      <!--{{ form_widget(form.userName, {'attr' : {'name': 'username', 'id': 'inputUser', 'class': 'form-control', 'placeholder': 'Username', 'required': 'true', 'autofocus': 'true'}}) }}-->
-                      <input name="username" type="text" id="inputUser" class="form-control" placeholder="Username" required autofocus />
+                      {{ form_widget(form.userName, {'attr' : {'name': 'username', 'id': 'inputUser', 'class': 'form-control', 'placeholder': 'Username', 'required': 'true', 'autofocus': 'true'}}) }}
+                      <!--<input name="username" type="text" id="inputUser" class="form-control" placeholder="Username" required autofocus />-->
                       <label for="inputUser">Username</label>
                       
                     </div>
                     
 
                     <div class="form-label-group">
-                      {{ form_widget(form.userEmail, {'attr' : {'name': 'email', 'id': 'inputEmail', 'class': 'form-control', 'placeholder': 'Email adress', 'required': 'true', 'enabled': 'true'}}) }}
+                      {{ form_widget(form.userEmail, {'attr' : {'name': 'email', 'id': 'inputEmail', 'class': 'form-control', 'placeholder': 'Email adress', 'required': 'true'}}) }}
                       <!--<input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required />-->
                       <label for="inputEmail">Email address</label>
                     </div>
 
                     <div class="form-label-group">
-                      {{ form_widget(form.userKey) }}
+                      {{ form_widget(form.userKey, {'attr' : {'id': 'inputPassword', 'class': 'form-control', 'placeholder': 'Password', 'required': 'true'}}) }}
                       <!--<input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required />-->
                       <label for="inputPassword">Password</label>
                     </div>
 
 
                     <div class="form-label-group">
-                      {{ form_widget(form.repeatKey) }}
+                      {{ form_widget(form.repeatKey, {'attr' : {'id': 'inputPassword-repeat', 'class': 'form-control', 'placeholder': 'Repeat password', 'required': 'true'}}) }}
                       <!--<input type="password" id="inputPassword-repeat" class="form-control" placeholder="Repeat password" required />-->
                       <label for="inputPassword-repeat">Repeat password</label>
                     </div>

@@ -2,11 +2,13 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Routing\Annotation\Route;
-
-use App\Entity\Authentification;
 use App\Form\RegistrationType;
+use App\Entity\Authentification;
+
+use Symfony\Component\HttpFoundation\Request;
+use Doctrine\Common\Persistence\ObjectManager;
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class NeoccurHomeController extends AbstractController
 {
@@ -24,12 +26,19 @@ class NeoccurHomeController extends AbstractController
      * @Route("/signup", name="signup")
      */
 
-    public function signup()
+    public function signup(Request $request, ObjectManager $manager)
     {
 
         $user = new Authentification();
 
         $form = $this->createForm(RegistrationType::class, $user);
+
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()) {
+            $manager->persist($user);
+            $manager->flush();
+        };
 
         return $this->render('home/signup.html.twig', [
             'controller_name' => 'NeoccurHomeController',
