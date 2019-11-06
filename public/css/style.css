@@ -265,75 +265,74 @@ blockquote .blockquote-footer::before {
           animation: change2 infinite 20s;
 }
 
-@-webkit-keyframes change1 {
-  0% {
-    content: "A new way to";
-  }
-  25% {
-    content: "Another quote";
-  }
-  50% {
-    content: "theXtroyer is";
-  }
-  75% {
-    content: "Why does Oxyde2";
-  }
-  100% {
-    content: "Lorem ipsum dolor";
-  }
-}
-
 @keyframes change1 {
   0% {
     content: "A new way to";
   }
   25% {
-    content: "Another quote";
+    content: "Meet people with";
   }
   50% {
-    content: "theXtroyer is";
+    content: "Simple but";
   }
   75% {
-    content: "Why does Oxyde2";
+    content: "Debate around";
   }
   100% {
-    content: "Lorem ipsum dolor";
+    content: "Sign up now!";
   }
 }
-
-@-webkit-keyframes change2 {
+@keyframes change1 {
   0% {
-    content: "meet new freinds";
+    content: "A new way to";
   }
   25% {
-    content: "for you (who?)";
+    content: "Meet people with";
   }
   50% {
-    content: "the best";
+    content: "Simple but";
   }
   75% {
-    content: "love emojis";
+    content: "Debate around";
   }
   100% {
-    content: "sit amet wow";
+    content: "Sign up now!";
   }
 }
 
 @keyframes change2 {
   0% {
-    content: "meet new freinds";
+    content: "meet new friends!";
   }
   25% {
-    content: "for you (who?)";
+    content: "common interests!";
   }
   50% {
-    content: "the best";
+    content: "very useful.";
   }
   75% {
-    content: "love emojis";
+    content: "your interests!";
   }
   100% {
-    content: "sit amet wow";
+    content: " ";
+  }
+}
+
+@keyframes change2 {
+  0% {
+    content: "meet new friends!";
+  }
+  25% {
+    content: "common interests!";
+  }
+  50% {
+    content: "very useful.";
+  }
+  75% {
+    content: "your interests!";
+  }
+  100% {
+    content: " ";
   }
 }
 
